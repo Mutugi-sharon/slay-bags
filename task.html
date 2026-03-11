@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bag Showcase</title>
+    <title>Handbag Showcase</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
@@ -11,44 +11,30 @@
     <!-- Internal CSS -->
     <style>
         /* Internal CSS */
-        h1 {
-            font-size: 36px;
-            color: darkblue;
+        h1.internal {
+            color: orange;
+            font-weight: bold;
         }
 
-        p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.5;
+        p.internal {
+            color: orange;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <h1>Slay-Bags Collection</h1>
-    <h2>Unique, Stylish, Impactful</h2>
+    <!-- Headings -->
+    <h1 style="color: blue; font-style: italic;">Luxury Handbags</h1> <!-- Inline CSS -->
+    <h1 class="internal">Designer Classics</h1> <!-- Internal CSS -->
+    <h1>Modern Elegance</h1> <!-- External CSS will style this -->
 
-    <!-- Paragraphs using inline CSS -->
-    <p style="color: darkred; font-weight: bold;">Each Slay-Bag is handcrafted with care, ensuring that every piece is unique.</p>
-    <p style="color: green; font-style: italic;">They are made with high-quality materials that last long and feel luxurious.</p>
-    <p style="color: purple;">Owning a Slay-Bag empowers you while supporting local artisans and sustainable practices.</p>
-
-    <!-- Image containers -->
-    <div class="container">
-        <img src="https://via.placeholder.com/200?text=Bag+1" alt="Bag 1">
-    </div>
-    <div class="container">
-        <img src="https://via.placeholder.com/200?text=Bag+2" alt="Bag 2">
-    </div>
-    <div class="container">
-        <img src="https://via.placeholder.com/200?text=Bag+3" alt="Bag 3">
-    </div>
-    <div class="container">
-        <img src="https://via.placeholder.com/200?text=Bag+4" alt="Bag 4">
-    </div>
-    <div class="container">
-        <img src="https://via.placeholder.com/200?text=Bag+5" alt="Bag 5">
-    </div>
+    <!-- Paragraphs -->
+    <p style="color: blue; font-style: italic;">Chanel's flap bags and Gucci's Dionysus bags are timeless pieces, perfect for elegant events and stylish outings.</p> <!-- Inline CSS -->
+    
+    <p class="internal">Louis Vuitton's Speedy bags and Prada's nylon totes combine style and practicality, making them favorites among fashion enthusiasts worldwide.</p> <!-- Internal CSS -->
+    
+    <p class="external">Hermès Birkin and Celine Luggage bags are luxurious handbags recognized globally for their craftsmanship and iconic designs.</p> <!-- External CSS -->
 
 </body>
 </html>

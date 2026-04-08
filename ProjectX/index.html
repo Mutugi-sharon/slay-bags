@@ -1,162 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Bags Collection</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slay Bags</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: purple;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(pink, white);
+  color: #333;
+}
 
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #5e2a84;
-        }
+/* NAVBAR */
+nav {
+  background: #ff69b4;
+  padding: 15px;
+  text-align: center;
+}
 
-        h1 {
-            margin: 0;
-        }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-        section {
-            padding: 20px;
-        }
+nav a:hover {
+  color: purple;
+}
 
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+}
 
-        /* Image Styling */
-        .bag-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 20px;
-        }
+/* FLOWERS */
+body::before {
+  content: "🌸 🌷 🌺 🌸 🌼";
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+}
 
-        .bag-container img {
-            width: 100%;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
+/* SEARCH */
+.search-bar {
+  text-align: center;
+  margin: 20px;
+}
 
-        /* Hover effect (light blue) */
-        .bag-container img:hover {
-            transform: scale(1.05);
-            border: 3px solid lightblue;
-        }
+.search-bar input {
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid pink;
+}
 
-        /* Table Styling */
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #6a1b9a;
-        }
+/* TEXT SECTION */
+section {
+  padding: 20px;
+}
 
-        th, td {
-            padding: 12px;
-            border: 1px solid white;
-            text-align: center;
-        }
+/* BAGS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-        th {
-            background-color: #4a148c;
-        }
+.bag {
+  margin: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #ccc;
+}
 
-        /* Table hover effect */
-        tr:hover {
-            background-color: lightblue;
-            color: black;
-        }
+.bag img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #5e2a84;
-        }
-    </style>
+.bag:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px purple;
+}
+
+/* TABLE */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: pink;
+}
+
+/* CHART */
+.chart {
+  width: 80%;
+  margin: auto;
+}
+
+.bar {
+  background: #ff69b4;
+  margin: 10px 0;
+  color: white;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #ff69b4;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+</style>
 </head>
+
 <body>
 
+<!-- MENU -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#bags">Bags</a>
+  <a href="#prices">Prices</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
-    <h1>Luxury Bag Collection</h1>
+  <h1>🌸 SLAY BAGS 🌸</h1>
+  <p>Luxury Meets Beauty</p>
 </header>
 
+<div class="search-bar">
+  <input type="text" placeholder="Search for your dream bag...">
+</div>
+
+<!-- HERITAGE -->
 <section>
-    <p>
-        Bags have been an essential part of human culture for centuries, evolving from simple pouches into symbols of status and fashion. Today, luxury bags are more than just accessories; they represent craftsmanship, heritage, and identity.
-    </p>
+  <h2>About Our Bags</h2>
 
-    <p>
-        Brands like Louis Vuitton and Gucci have deep historical roots, originating in Europe and becoming global icons. Their designs often reflect tradition while adapting to modern trends, making them timeless pieces.
-    </p>
+  <p>Bags are more than accessories; they represent style, culture, and identity. From ancient times to modern fashion, bags have evolved into symbols of elegance and personality.</p>
 
-    <p>
-        Prada and Chanel revolutionized the fashion world by introducing minimalist elegance and bold innovation. Their bags are known for both practicality and luxury, making them favorites among fashion enthusiasts.
-    </p>
+  <p>Louis Vuitton started as a luxury trunk maker and became a global fashion icon known for its signature monogram and high-quality craftsmanship.</p>
 
-    <p>
-        The Birkin bag, one of the most exclusive bags in the world, symbolizes ultimate luxury and craftsmanship. Each piece is handcrafted, showcasing attention to detail and premium materials.
-    </p>
+  <p>Gucci represents bold fashion, combining modern creativity with Italian heritage to create standout designs loved worldwide.</p>
 
-    <p>
-        Overall, luxury bags carry stories of heritage, culture, and artistry. They are not just items for carrying belongings, but expressions of style, history, and personal identity.
-    </p>
+  <p>Prada focuses on simplicity and elegance, offering clean and sophisticated designs for those who love minimal luxury.</p>
+
+  <p>Chanel and Birkin bags symbolize ultimate luxury and exclusivity, often seen as timeless investments and status symbols.</p>
 </section>
 
-<section class="bag-container">
-    <img src="https://via.placeholder.com/300?text=Louis+Vuitton+Bag" alt="Louis Vuitton">
-    <img src="https://via.placeholder.com/300?text=Gucci+Bag" alt="Gucci">
-    <img src="https://via.placeholder.com/300?text=Prada+Bag" alt="Prada">
-    <img src="https://via.placeholder.com/300?text=Chanel+Bag" alt="Chanel">
-    <img src="https://via.placeholder.com/300?text=Birkin+Bag" alt="Birkin">
+<!-- BAGS -->
+<section id="bags" class="container">
+
+  <div class="bag">
+    <h3>Louis Vuitton</h3>
+    <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=600&q=80" alt="Louis Vuitton">
+  </div>
+
+  <div class="bag">
+    <h3>Gucci</h3>
+    <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=600&q=80" alt="Gucci">
+  </div>
+
+  <div class="bag">
+    <h3>Prada</h3>
+    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Prada">
+  </div>
+
+  <div class="bag">
+    <h3>Chanel</h3>
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7c3bba1a8?auto=format&fit=crop&w=600&q=80" alt="Chanel">
+  </div>
+
+  <div class="bag">
+    <h3>Birkin</h3>
+    <img src="https://images.unsplash.com/photo-1593032465171-8b6f1e86cce5?auto=format&fit=crop&w=600&q=80" alt="Birkin">
+  </div>
+
 </section>
 
-<section>
-    <table>
-        <tr>
-            <th>Brand</th>
-            <th>Origin</th>
-            <th>Famous For</th>
-        </tr>
-        <tr>
-            <td>Louis Vuitton</td>
-            <td>France</td>
-            <td>Monogram Canvas</td>
-        </tr>
-        <tr>
-            <td>Gucci</td>
-            <td>Italy</td>
-            <td>Luxury Leather Goods</td>
-        </tr>
-        <tr>
-            <td>Prada</td>
-            <td>Italy</td>
-            <td>Minimalist Design</td>
-        </tr>
-        <tr>
-            <td>Chanel</td>
-            <td>France</td>
-            <td>Classic Flap Bag</td>
-        </tr>
-        <tr>
-            <td>Birkin</td>
-            <td>France</td>
-            <td>Exclusive Handmade Bags</td>
-        </tr>
-    </table>
-</section>
+<!-- PRICES -->
+<h2 id="prices" style="text-align:center;">Price List</h2>
 
-<footer>
-    <p>© 2026 Luxury Bags Collection</p>
+<table>
+<tr><th>Brand</th><th>Price (KES)</th></tr>
+<tr><td>Louis Vuitton</td><td>120,000</td></tr>
+<tr><td>Gucci</td><td>95,000</td></tr>
+<tr><td>Prada</td><td>110,000</td></tr>
+<tr><td>Chanel</td><td>150,000</td></tr>
+<tr><td>Birkin</td><td>500,000</td></tr>
+</table>
+
+<!-- CHART -->
+<div class="chart">
+  <div class="bar" style="width:60%">Louis Vuitton</div>
+  <div class="bar" style="width:50%">Gucci</div>
+  <div class="bar" style="width:55%">Prada</div>
+  <div class="bar" style="width:70%">Chanel</div>
+  <div class="bar" style="width:90%">Birkin</div>
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <p>📞 +254 712 345 678</p>
+  <p>📍 Superior Center, Nairobi</p>
+  <p>We deliver countrywide across Kenya</p>
 </footer>
 
 </body>

@@ -1,207 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slay Bags</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Bags Collection</title>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(brown, black);
-  color: white;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: purple;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
 
-/* HEADER */
-header {
-  background: black;
-  padding: 20px;
-  text-align: center;
-}
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #5e2a84;
+        }
 
-header h1 {
-  color: #d4af37;
-}
+        h1 {
+            margin: 0;
+        }
 
-/* SEARCH BAR */
-.search-bar {
-  text-align: center;
-  margin: 20px;
-}
+        section {
+            padding: 20px;
+        }
 
-.search-bar input {
-  padding: 10px;
-  width: 50%;
-  border-radius: 20px;
-  border: none;
-}
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
 
-/* BAG SECTION */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+        /* Image Styling */
+        .bag-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
 
-.bag {
-  margin: 20px;
-  padding: 15px;
-  background: #222;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s;
-}
+        .bag-container img {
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
 
-.bag img {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
+        /* Hover effect (light blue) */
+        .bag-container img:hover {
+            transform: scale(1.05);
+            border: 3px solid lightblue;
+        }
 
-/* HOVER EFFECT */
-.bag:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px purple;
-}
+        /* Table Styling */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #6a1b9a;
+        }
 
-/* TABLE */
-table {
-  width: 80%;
-  margin: 30px auto;
-  border-collapse: collapse;
-}
+        th, td {
+            padding: 12px;
+            border: 1px solid white;
+            text-align: center;
+        }
 
-table, th, td {
-  border: 1px solid white;
-}
+        th {
+            background-color: #4a148c;
+        }
 
-th, td {
-  padding: 12px;
-  text-align: center;
-}
+        /* Table hover effect */
+        tr:hover {
+            background-color: lightblue;
+            color: black;
+        }
 
-/* TABLE HOVER */
-tr:hover {
-  background-color: purple;
-}
-
-/* FOOTER */
-footer {
-  background: black;
-  padding: 20px;
-  text-align: center;
-}
-</style>
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #5e2a84;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>SLAY BAGS COLLECTION</h1>
-  <p>Luxury | Style | Heritage</p>
+    <h1>Luxury Bag Collection</h1>
 </header>
 
-<div class="search-bar">
-  <input type="text" placeholder="Search for your dream bag...">
-</div>
+<section>
+    <p>
+        Bags have been an essential part of human culture for centuries, evolving from simple pouches into symbols of status and fashion. Today, luxury bags are more than just accessories; they represent craftsmanship, heritage, and identity.
+    </p>
 
-<!-- HERITAGE SECTION -->
-<section style="padding: 20px;">
-  <h2>About Our Bags</h2>
+    <p>
+        Brands like Louis Vuitton and Gucci have deep historical roots, originating in Europe and becoming global icons. Their designs often reflect tradition while adapting to modern trends, making them timeless pieces.
+    </p>
 
-  <p>
-  Bags have always been more than just accessories; they are symbols of identity, class, and culture. From ancient times, people used bags to carry essentials, but over the years, they evolved into fashion statements that define elegance and personality. Today, luxury bags represent a blend of history, craftsmanship, and timeless beauty.
-  </p>
+    <p>
+        Prada and Chanel revolutionized the fashion world by introducing minimalist elegance and bold innovation. Their bags are known for both practicality and luxury, making them favorites among fashion enthusiasts.
+    </p>
 
-  <p>
-  Louis Vuitton, one of the most iconic brands, began as a trunk maker in the 19th century. Its craftsmanship and signature monogram design have made it a global symbol of luxury. Owning a Louis Vuitton bag is not just about fashion but about carrying a legacy of innovation and prestige.
-  </p>
+    <p>
+        The Birkin bag, one of the most exclusive bags in the world, symbolizes ultimate luxury and craftsmanship. Each piece is handcrafted, showcasing attention to detail and premium materials.
+    </p>
 
-  <p>
-  Gucci bags bring boldness and creativity into fashion. Originating from Italy, Gucci combines modern trends with vintage inspiration. Their designs stand out with unique patterns and premium materials, making them perfect for individuals who love to express their personality through fashion.
-  </p>
-
-  <p>
-  Prada is known for its minimalist elegance and sophistication. With clean lines and high-quality materials, Prada bags reflect class and subtle luxury. They are perfect for individuals who appreciate simplicity yet want to make a strong fashion statement.
-  </p>
-
-  <p>
-  Chanel and Birkin bags represent the peak of exclusivity. Chanel bags are timeless and classy, often associated with elegance and femininity, while Birkin bags are rare and highly sought after, symbolizing wealth and status. These bags are not just fashion items—they are investments and pieces of art.
-  </p>
+    <p>
+        Overall, luxury bags carry stories of heritage, culture, and artistry. They are not just items for carrying belongings, but expressions of style, history, and personal identity.
+    </p>
 </section>
 
-<!-- BAG IMAGES -->
-<div class="container">
+<section class="bag-container">
+    <img src="https://via.placeholder.com/300?text=Louis+Vuitton+Bag" alt="Louis Vuitton">
+    <img src="https://via.placeholder.com/300?text=Gucci+Bag" alt="Gucci">
+    <img src="https://via.placeholder.com/300?text=Prada+Bag" alt="Prada">
+    <img src="https://via.placeholder.com/300?text=Chanel+Bag" alt="Chanel">
+    <img src="https://via.placeholder.com/300?text=Birkin+Bag" alt="Birkin">
+</section>
 
-  <div class="bag">
-    <h3>Louis Vuitton</h3>
-    <img src="https://images.unsplash.com/photo-1593032465171-8b6f1e86cce5" alt="Louis Vuitton Bag">
-    <p>Classic luxury with iconic monogram.</p>
-  </div>
+<section>
+    <table>
+        <tr>
+            <th>Brand</th>
+            <th>Origin</th>
+            <th>Famous For</th>
+        </tr>
+        <tr>
+            <td>Louis Vuitton</td>
+            <td>France</td>
+            <td>Monogram Canvas</td>
+        </tr>
+        <tr>
+            <td>Gucci</td>
+            <td>Italy</td>
+            <td>Luxury Leather Goods</td>
+        </tr>
+        <tr>
+            <td>Prada</td>
+            <td>Italy</td>
+            <td>Minimalist Design</td>
+        </tr>
+        <tr>
+            <td>Chanel</td>
+            <td>France</td>
+            <td>Classic Flap Bag</td>
+        </tr>
+        <tr>
+            <td>Birkin</td>
+            <td>France</td>
+            <td>Exclusive Handmade Bags</td>
+        </tr>
+    </table>
+</section>
 
-  <div class="bag">
-    <h3>Gucci</h3>
-    <img src="https://images.unsplash.com/photo-1618354691792-d1d42acfd860" alt="Gucci Bag">
-    <p>Bold and stylish statement pieces.</p>
-  </div>
-
-  <div class="bag">
-    <h3>Prada</h3>
-    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="Prada Bag">
-    <p>Elegant and minimalistic designs.</p>
-  </div>
-
-  <div class="bag">
-    <h3>Chanel</h3>
-    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Chanel Bag">
-    <p>Timeless sophistication and class.</p>
-  </div>
-
-  <div class="bag">
-    <h3>Birkin</h3>
-    <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e" alt="Birkin Bag">
-    <p>Exclusive and highly luxurious.</p>
-  </div>
-
-</div>
-
-<!-- PRICE TABLE -->
-<h2 style="text-align:center;">Price List</h2>
-
-<table>
-<tr>
-  <th>Brand</th>
-  <th>Price (KES)</th>
-</tr>
-<tr>
-  <td>Louis Vuitton</td>
-  <td>120,000</td>
-</tr>
-<tr>
-  <td>Gucci</td>
-  <td>95,000</td>
-</tr>
-<tr>
-  <td>Prada</td>
-  <td>110,000</td>
-</tr>
-<tr>
-  <td>Chanel</td>
-  <td>150,000</td>
-</tr>
-<tr>
-  <td>Birkin</td>
-  <td>500,000</td>
-</tr>
-</table>
-
-<!-- FOOTER -->
 <footer>
-  <p><strong>Contact Us:</strong> +254 712 345 678</p>
-  <p><strong>Location:</strong> Superior Center, Nairobi</p>
-  <p>We offer deliveries countrywide across Kenya.</p>
+    <p>© 2026 Luxury Bags Collection</p>
 </footer>
 
 </body>

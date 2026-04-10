@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Assignment 3 - Slay-Bags</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: url("your-background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.85);
+      z-index: -1;
+    }
+    header {
+      background: linear-gradient(to right, deeppink, hotpink);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h2 {
+      color: deeppink;
+      margin-bottom: 20px;
+    }
+    .text-paragraph {
+      margin: 15px auto;
+      font-size: 16px;
+      text-align: justify;
+    }
+    #highlighted-paragraph {
+      margin: 25px auto;
+      font-size: 17px;
+      font-weight: bold;
+      color: deeppink;
+      background: #ffe6f2;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    #final-paragraph {
+      margin: 25px auto;
+      font-size: 16px;
+      font-style: italic;
+      color: purple;
+    }
+    .back-link {
+      display: inline-block;
+      background: deeppink;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+    .back-link:hover {
+      background: black;
+    }
+    footer {
+      background: linear-gradient(to right, pink, silver);
+      padding: 20px;
+      color: deeppink;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Slay-Bags</h1>
+    <p>Luxury. Style. Confidence.</p>
+  </header>
 
+  <main>
+    <h2>Importance of Our Site</h2>
+    <p class="text-paragraph">
+      Slay-Bags simplifies luxury shopping. Our site saves you time, ensures quality, and provides a trusted platform where style meets convenience. We bring together curated collections, transparent pricing, and a seamless shopping experience — making fashion accessible to everyone.
+    </p>
+
+    <p id="highlighted-paragraph">
+      Why it matters: Slay-Bags is more than just a store. It’s a lifestyle hub where every purchase supports sustainable fashion and empowers local artisans. Shopping here means you’re part of something bigger.
+    </p>
+
+    <p class="text-paragraph">
+      Our platform is designed with you in mind — intuitive navigation, secure checkout, and personalized recommendations ensure that your journey is smooth from start to finish.
+    </p>
+
+    <p class="text-paragraph">
+      Customers consistently highlight how our site boosts their confidence in online shopping. With clear product details, reliable delivery, and responsive support, Slay-Bags sets the standard for luxury e-commerce.
+    </p>
+
+    <p id="final-paragraph">
+      In short, Slay-Bags is where convenience meets elegance. Every click brings you closer to a bag that’s not just an accessory, but a statement of identity and purpose.
+    </p>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </main>
+
+  <footer>
+    © 2026 Slay-Bags
+  </footer>
+</body>
+</html>

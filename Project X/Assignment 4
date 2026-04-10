@@ -1,1 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slay-Bags Showcase</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: url("pink.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+        line-height: 1.6;
+      }
 
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.85);
+        z-index: -1;
+      }
+
+      header {
+        background: linear-gradient(to right, deeppink, hotpink);
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+      header p {
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 1.1rem;
+      }
+
+      nav {
+        background: rgba(192, 192, 192, 0.95);
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      nav a {
+        text-decoration: none;
+        color: deeppink;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 16px;
+        transition:
+          color 0.3s,
+          transform 0.2s;
+      }
+      nav a:hover {
+        color: black;
+        transform: scale(1.1);
+      }
+
+      main {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      #main-title {
+        color: purple;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+      .sub-title {
+        color: deeppink;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+      .section-title {
+        color: hotpink;
+        margin-top: 30px;
+        font-size: 1.2rem;
+      }
+
+      .text-paragraph {
+        margin: 15px auto;
+        font-size: 16px;
+        text-align: justify;
+      }
+
+      #highlighted-paragraph {
+        margin: 25px auto;
+        font-size: 17px;
+        font-weight: bold;
+        color: deeppink;
+        background: #ffe6f2;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      #final-paragraph {
+        margin: 25px auto;
+        font-size: 16px;
+        font-style: italic;
+        color: purple;
+      }
+
+      footer {
+        background: linear-gradient(to right, silver, pink);
+        padding: 20px;
+        text-align: center;
+        color: deeppink;
+        font-weight: bold;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SLAY-BAGS</h1>
+      <p>Luxury. Style. Confidence.</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Offers</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main>
+      <h1 id="main-title">Slay-Bags: Where Style Meets Purpose</h1>
+      <h2 class="sub-title">Discover the Unique Touch</h2>
+      <h3 class="section-title">Our Bags' Distinctiveness</h3>
+      <h4 class="section-title">Why Choose Us?</h4>
+
+      <p class="text-paragraph">
+        Each Slay-Bag is handcrafted with precision, blending modern fashion
+        with timeless designs. No two bags are exactly alike, making every piece
+        a unique statement.
+      </p>
+
+      <p class="text-paragraph">
+        Our materials are carefully selected for durability and luxury, ensuring
+        that every bag lasts long while keeping its elegant look. This adds
+        incredible value to your investment.
+      </p>
+
+      <p id="highlighted-paragraph">
+        Slay-Bags don’t just look good—they empower. By choosing our bags, you
+        support local artisans and sustainable practices, creating a meaningful
+        impact in the community.
+      </p>
+
+      <p class="text-paragraph">
+        The design of each bag considers functionality and style, making them
+        perfect for work, events, or casual outings. You carry both practicality
+        and sophistication wherever you go.
+      </p>
+
+      <p class="text-paragraph">
+        Our customers often say that owning a Slay-Bag boosts their confidence
+        and elevates their personal style. Each bag tells a story that sets you
+        apart from the crowd.
+      </p>
+
+      <p id="final-paragraph">
+        With every Slay-Bag, you invest in uniqueness, quality, and purpose.
+        Experience the joy of owning a bag that is more than an accessory—it’s a
+        symbol of value and impact.
+      </p>
+    </main>
+
+    <footer>
+      <p>© 2026 Slay-Bags</p>
+      <p>Contact: +254 712 345 678</p>
+      <p>Instagram: @slaybags</p>
+    </footer>
+  </body>
+</html>

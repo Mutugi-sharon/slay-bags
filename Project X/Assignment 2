@@ -105,36 +105,38 @@
     </header>
 
     <main>
-      <h2>Importance of Our Site</h2>
+      <h2>About Our Bags</h2>
       <p class="text-paragraph">
-        Slay-Bags simplifies luxury shopping. Our site saves you time, ensures
-        quality, and provides a trusted platform where style meets convenience.
-        We bring together curated collections, transparent pricing, and a
-        seamless shopping experience — making fashion accessible to everyone.
+        Slay-Bags is dedicated to redefining luxury accessories. Each bag in our
+        collection is crafted with precision, combining timeless design with
+        modern functionality. From elegant totes to versatile crossbody styles,
+        our pieces are made to complement every occasion.
       </p>
 
       <p id="highlighted-paragraph">
-        Why it matters: Slay-Bags is more than just a store. It’s a lifestyle
-        hub where every purchase supports sustainable fashion and empowers local
-        artisans. Shopping here means you’re part of something bigger.
+        Why it matters: A Slay-Bag is more than storage — it’s a statement. Our
+        designs balance sophistication with practicality, ensuring you carry not
+        just essentials but also confidence. Every bag reflects our commitment
+        to sustainable materials and artisan craftsmanship.
       </p>
 
       <p class="text-paragraph">
-        Our platform is designed with you in mind — intuitive navigation, secure
-        checkout, and personalized recommendations ensure that your journey is
-        smooth from start to finish.
+        We focus on details that matter: premium fabrics, durable hardware, and
+        thoughtful compartments that make organization effortless. Whether for
+        work, travel, or leisure, our bags are built to adapt to your lifestyle
+        while maintaining elegance.
       </p>
 
       <p class="text-paragraph">
-        Customers consistently highlight how our site boosts their confidence in
-        online shopping. With clear product details, reliable delivery, and
-        responsive support, Slay-Bags sets the standard for luxury e-commerce.
+        Customers love how our bags elevate their everyday look. With versatile
+        designs, reliable quality, and a touch of luxury, Slay-Bags has become a
+        trusted choice for those who value both fashion and function.
       </p>
 
       <p id="final-paragraph">
-        In short, Slay-Bags is where convenience meets elegance. Every click
-        brings you closer to a bag that’s not just an accessory, but a statement
-        of identity and purpose.
+        In short, Slay-Bags is where elegance meets utility. Each piece is an
+        accessory that speaks to your identity, designed to empower and inspire
+        with every use.
       </p>
 
       <a href="index.html" class="back-link">← Back to Home</a>

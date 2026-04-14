@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slay Bags | Luxury Store</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* FLOWERS */
+body::before {
+  content: "🌸 🌷 🌸";
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  opacity: 0.5;
+}
+
+/* NAV */
+nav {
+  background: black;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 25px;
+  background: #ffe4ec;
+}
+
+/* CONTROLS */
+.controls {
+  text-align: center;
+  margin: 20px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* PRODUCTS */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+button {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: pink;
+  color: black;
+}
+
+/* CART */
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  background: white;
+  border-left: 2px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* MODALS */
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  margin: 15% auto;
+  width: 300px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Shop</a>
+  <a href="#" onclick="openLogin()">Login</a>
+</nav>
+
+<header>
+  <h1>🌸 Slay Bags 🌸</h1>
+  <p>Luxury Bags Delivered Across Kenya</p>
+</header>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <input type="text" id="search" placeholder="Search..." onkeyup="filterProducts()">
+  
+  <select onchange="filterProducts()" id="filter">
+    <option value="all">All Brands</option>
+    <option value="lv">Louis Vuitton</option>
+    <option value="gucci">Gucci</option>
+    <option value="prada">Prada</option>
+  </select>
+</div>
+
+<!-- PRODUCTS -->
+<div class="container" id="products">
+
+  <div class="product" data-name="louis vuitton" data-brand="lv">
+    <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+    <h3>Louis Vuitton</h3>
+    <p>KES 120,000</p>
+    <button onclick="addToCart('Louis Vuitton',120000)">Add</button>
+  </div>
+
+  <div class="product" data-name="gucci" data-brand="gucci">
+    <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e">
+    <h3>Gucci</h3>
+    <p>KES 95,000</p>
+    <button onclick="addToCart('Gucci',95000)">Add</button>
+  </div>
+
+  <div class="product" data-name="prada" data-brand="prada">
+    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+    <h3>Prada</h3>
+    <p>KES 110,000</p>
+    <button onclick="addToCart('Prada',110000)">Add</button>
+  </div>
+
+</div>
+
+<!-- CART -->
+<div class="cart">
+  <h3>🛒 Cart</h3>
+  <ul id="cart"></ul>
+  <h4>Total: KES <span id="total">0</span></h4>
+  <button onclick="checkout()">Checkout</button>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="modal" id="payModal">
+  <div class="modal-content">
+    <h3>M-Pesa Payment</h3>
+    <input placeholder="07XXXXXXXX"><br><br>
+    <button onclick="pay()">Confirm</button>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <h3>Login</h3>
+    <input placeholder="Username"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+    <button onclick="closeLogin()">Login</button>
+  </div>
+</div>
+
+<script>
+let total = 0;
+let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+function updateCart() {
+  let cart = document.getElementById("cart");
+  cart.innerHTML = "";
+  total = 0;
+
+  cartData.forEach((item, index) => {
+    let li = document.createElement("li");
+    li.innerHTML = `${item.name} - ${item.price}
+    <button onclick="remove(${index})">X</button>`;
+    cart.appendChild(li);
+    total += item.price;
+  });
+
+  document.getElementById("total").textContent = total;
+  localStorage.setItem("cart", JSON.stringify(cartData));
+}
+
+function addToCart(name, price) {
+  cartData.push({name, price});
+  updateCart();
+}
+
+function remove(i) {
+  cartData.splice(i,1);
+  updateCart();
+}
+
+function checkout() {
+  if(total === 0) return alert("Cart empty");
+  document.getElementById("payModal").style.display = "block";
+}
+
+function pay() {
+  alert("✅ Payment Successful!");
+  cartData = [];
+  updateCart();
+  document.getElementById("payModal").style.display = "none";
+}
+
+function filterProducts() {
+  let search = document.getElementById("search").value.toLowerCase();
+  let filter = document.getElementById("filter").value;
+  let products = document.querySelectorAll(".product");
+
+  products.forEach(p => {
+    let name = p.dataset.name;
+    let brand = p.dataset.brand;
+
+    let matchSearch = name.includes(search);
+    let matchFilter = filter === "all" || brand === filter;
+
+    p.style.display = (matchSearch && matchFilter) ? "block" : "none";
+  });
+}
+
+function openLogin() {
+  document.getElementById("loginModal").style.display = "block";
+}
+
+function closeLogin() {
+  document.getElementById("loginModal").style.display = "none";
+}
+
+updateCart();
+</script>
+
+</body>
+</html>
